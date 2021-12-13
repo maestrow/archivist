@@ -5,9 +5,6 @@ build:
 attach:
 	docker exec -ti phpfs bash
 
-composer:
-	docker run --rm --interactive --tty --entrypoint bash --volume ${PWD}/app:/app composer
-
 repl:
 	# https://www.php.net/manual/en/features.commandline.interactive.php
 	# to exit type 'exit'

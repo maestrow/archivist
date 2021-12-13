@@ -1,9 +1,9 @@
+# archivist - Zero-dependency PHP file manager
+
 ## Development
 
-This repository is taken as a basis: https://github.com/microsoft/vscode-remote-try-php
-
 Features:
-- Development inside docker container using VSCode and Remote-Containers extension
+- Development inside docker container using VSCode and Remote-Containers extension. This repository is taken as a basis: https://github.com/microsoft/vscode-remote-try-php
 - Debugging
 - Apache web server: Type `apache2ctl start` insde container's terminal (just open terminal in VSCode - it'll be opened inside container)
 
@@ -13,7 +13,6 @@ Features:
 Use `code-remote-container` script to open  VSCode with folder in container.
 
 ```bash
-make composer # run container with composer in interactive mode so you cam call composer commands. 
 make attach   # open bash in container
 make repl     # run php repl in container
 ```
@@ -21,7 +20,6 @@ make repl     # run php repl in container
 in container:
 ```
 apache2ctl start
-php -a
 ```
 
 
