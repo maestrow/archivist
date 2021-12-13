@@ -1,0 +1,31 @@
+:root {
+  --color-font: #333333;
+  --color-primary: #4778A3;
+  --color-primary-dark: #053A59;
+  --color-secondary: #F2F2F2;
+  --color-secondary-dark: #9B9B9B;
+
+  --width: 900px;
+  --padding-width: 30px;
+}
+
+* {
+  box-sizing : border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-secondary);
+  /* font-family: 'PT Serif', serif; */
+  font-family: Tahoma, Arial, sans-serif;
+  color: var(--color-primary-dark);
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

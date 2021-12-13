@@ -1,0 +1,15 @@
+/* Forms */
+
+.r-field {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.r-field input {
+  flex: 1;
+}
+
+.r-errorMessage {
+  color: red;
+}

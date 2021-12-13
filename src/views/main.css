@@ -1,0 +1,98 @@
+.main {
+  --padding: 10px;
+
+  margin: 5rem auto 0 auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  /* box-shadow: 4px 4px #ab86c7db; */
+  border: 3px solid #b7a5a5;
+}
+
+
+.main__header {
+  display: flex;
+  gap: 2rem;
+  padding: var(--padding);
+}
+
+.main__header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+/*  === Logo */
+
+.main__logo {
+  width: 70px;
+  margin: 0 1rem 1rem 0;
+}
+
+.main__logo-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+.main__logo-link:hover {
+  text-decoration: none;
+}
+
+.main__title {
+  font-size: 20pt;
+}
+
+.main__subtitle {
+ font-size: 10pt; 
+}
+
+/* === Actions */
+
+
+.main__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.main__action-link {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.main__act-logout {
+  margin-left: auto;
+}
+
+.main__upload-form {
+  display: flex;
+}
+
+/* === Table */
+
+.main thead th {
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-width: 0 0 2px;
+  text-align: left;
+
+}
+
+
+.main__info {
+  display: flex;
+}
+
+
+.main__scripts {
+  
+}
+
+.main__table {
+  border-spacing: 0;
+}

@@ -1,0 +1,45 @@
+.login {
+  width: 400px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0px 12px 24px rgba(0,105,157,.2);
+  background-color: white;
+}
+
+.login__logo {
+  width: 100px;
+  margin: 0 1rem 1rem 0;
+}
+
+.login__logo-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+.login__logo-link:hover {
+  text-decoration: none;
+}
+
+.login__title {
+  font-size: 20pt;
+}
+
+.login__subtitle {
+ font-size: 10pt; 
+}
+
+.login .r-field label {
+  width: 114px;
+  display: inline-block;
+}
+
+.login__buttons [type=submit] {
+  display: block;
+  margin-left: auto;
+  width: 90px;
+  height: 50px;
+  font-size: 14pt;
+}

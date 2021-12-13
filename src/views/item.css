@@ -1,0 +1,39 @@
+.item:hover {
+  background-color: #e9e1d1;
+}
+
+.item td {
+  padding: 0 var(--padding);
+}
+
+.item:not(:last-child) td {
+  border: 1px solid #dbdbdb;
+  border-width: 0 0 1px;
+}
+
+.item--dir .item__col-name {
+  font-weight: 600;
+}
+
+.item__col-name {
+  width: 100%;
+}
+
+.item__col-name a {
+  display: block;
+  padding: var(--padding);
+}
+
+/* .item__col-name a:hover {
+  background-color: bisque;
+} */
+
+.item__col-primary-actions,
+.item__col-mode,
+.item__col-size {
+  white-space: nowrap;
+}
+
+.item--hidden {
+  visibility: hidden;
+}

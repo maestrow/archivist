@@ -1,0 +1,23 @@
+.upload-button {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.upload-button__input {
+  cursor: pointer;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  /*This makes the button huge. If you want a bigger button, increase the font size*/
+  opacity: 0;
+}
+
+.upload-button__icon {
+  display: inline-block;
+}
