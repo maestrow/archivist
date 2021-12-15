@@ -22,6 +22,7 @@ class Actions {
 
   // File Actions
   public const open = 'open';
+  public const edit = 'edit';
   public const del = 'del';
   public const cut = 'cut';
   public const copy = 'copy';

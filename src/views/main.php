@@ -81,8 +81,6 @@ $m = $model;
       </div>
     </div>
 
-
-
   </div>
   <table class="main__table">
     <thead>
@@ -111,6 +109,12 @@ $m = $model;
               href="<?php echo $url->file('copy', $file->path) ?>"
             >
               <img src="images/copy.svg" alt="copy" title="copy" />
+            </a>
+            <a 
+              class="<?php echo Css::combine(['item--hidden' => $file->isDir]) ?>"
+              href="<?php echo $url->file('edit', $file->path) ?>"
+            >
+              <img src="images/edit.svg" alt="edit" title="edit" />
             </a>
             <a 
               class="<?php echo Css::combine([

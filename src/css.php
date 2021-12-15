@@ -10,11 +10,11 @@
   header('Content-type: text/css');
 
 	foreach($files as $file) {
-    //$path = join(DIRECTORY_SEPARATOR, [$path, $file]);
+    $fullPath = join(DIRECTORY_SEPARATOR, [$path, $file]);
     if (isset($_GET['list'])) { //ToDo: and environment = development
       echo $file, "\n";
     } else {
-      include_once($file);
+      include_once($fullPath);
       echo "\n\n";
     }
 	} 

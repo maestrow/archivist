@@ -39,6 +39,11 @@ if (get_val($_POST, 'action') == 'login') {
           viewMain($path);
           break;
 
+        case Actions::edit:
+          $path = $req->ensurePath(false);
+          viewEdit($path);
+          break;
+
         case Actions::cut:
           $path = $req->ensurePath();
           cut($path);
@@ -129,7 +134,7 @@ function viewMain($path)
   if (is_dir($path)) {
     viewDir($path);
   } else {
-    viewEdit($path);
+    viewViewFile($path);
   }
 }
 
@@ -149,6 +154,22 @@ function viewDir($path)
   $layoutTpl->content = $mainTpl->render();
 
   echo $layoutTpl->render();
+}
+
+function viewViewFile($path) {
+  $image_ext = ['jpg', 'gif', 'png', 'webp', 'svg'];
+  $parts = pathinfo($path);
+  $ext = $parts['extension'];
+  $content = file_get_contents($path);
+  if (in_array($ext, $image_ext) ) {
+    header("Content-Disposition: inline; filename=fileToOpen.{$ext}");
+    header("Content-Type: image/{$ext}");
+  } else if (in_array($ext, ['htm', 'html'])) {
+    header('Content-Type: text/html; charset=UTF-8');
+  } else {
+    header('Content-Type: text/plain; charset=UTF-8');
+  }
+  echo $content;
 }
 
 function viewEdit($path)

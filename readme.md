@@ -6,7 +6,7 @@ Features:
 - Development inside docker container using VSCode and Remote-Containers extension. This repository is taken as a basis: https://github.com/microsoft/vscode-remote-try-php
 - Debugging
 - Apache web server: Type `apache2ctl start` insde container's terminal (just open terminal in VSCode - it'll be opened inside container)
-
+- after start: go to http://localhost:8080/admin/. Use admin:admin account.
 
 ### CLI
 
